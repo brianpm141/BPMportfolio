@@ -402,11 +402,24 @@ main{
   display:flex;
   flex-direction:column;
   padding:5%;
+  align-items: center;
 }
+
+.second_info img{
+  aspect-ratio:1/1;
+  max-width: 70%;
+  border-radius: 15px;
+  justify-self: center;
+  align-self: center;
+  overflow: auto;
+  object-fit: contain;
+}
+
 .second_info h4{
   color:var(--primary-color);
   font-size:18px;
   margin:5% 0 10%;
+  text-align: center;
 }
 .second_info h5{
   color:var(--text-color);
