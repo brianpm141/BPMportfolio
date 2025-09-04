@@ -101,11 +101,12 @@ main{
 #titulo{
   display:flex;
   flex-direction:column;
-  height:100vh;
+  min-height:100vh;
   padding:0 10%;
   position:relative;
   text-align:left;
   width:100%;
+  margin-bottom: 5vh;
   z-index:1;
 }
 #titulo::before{
@@ -120,7 +121,11 @@ main{
   width:100%;
   z-index:-1;
 }
-#titulo span{ margin-top:5vh; }
+#titulo span{ 
+  margin-top:5vh;
+  display: flex;
+}
+
 #titulo h1{
   color:var(--primary-color);
   font-size:45px;
@@ -543,6 +548,7 @@ main{
   #titulo span{ align-items:flex-start; display:flex; flex-direction:column; gap:15px; }
 
   .card{ flex-direction:column; width:90%; }
+  .navegation_button{max-width: 80%;}
   .info_element{ font-size:20px; }
   .info_element h2{ font-size:28px; }
   .info_element p{ font-size:18px; }
