@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="BPM Software - Portafolio de software propiedad de Brayham Pavon Martell">
+
+    <title>BPM Software</title>
+
+    <link rel="icon" type="image/x-icon" href="img/logo.ico">
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="top_bar">
+        <div>
+            <a class = "titulo" href="#titulo">
+            <img id="icono" src="img/logopng.png" alt="BPM Software">
+            <strong> BPM </strong> <span> Software </span>
+            </a>
+        </div>
+        <nav class = "nav_links">
+            <a href="#proyectos">Proyectos</a>
+            <a href="#sobremi"> Sobre mi</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id = "titulo">
+        <h1>Hola, me llamo <strong> Brayham Pavon Martell </strong></h1>
+        <p>Soy un desarrollador de software que le gusta solucionar problemas reales implementando soluciones de software eficientes y escalables.</p>
+        <span>
+            <a href="#proyectos" class = "navegation_button" >Mis proyectos</a>
+            <a href="#contacto" class = "navegation_button"> Contáctame</a>
+        </span>
+    </section>
+
+    <section id = "proyectos">
+        <h1>Mis proyectos</h1>
+
+        <aside class = "card" id="inventarios">
+            <div class="img_element">
+                <div class="carousel-container">
+                    <div class="carousel-slide">
+                        <img src="img/Inventarios/Asignacion.png" alt="Asignacion">
+                        <img src="img/Inventarios/Captura Gestion equipos.png" alt="Captura Gestion equipos">
+                        <img src="img/Inventarios/Categorias.png" alt="Categorias">
+                        <img src="img/Inventarios/Reportes.png" alt="Reportes">
+                        <img src="img/Inventarios/Ubicaciones.png" alt="Ubicaciones">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
+            <div class = "info_element">
+                <h2>Aplicación web de manejo de inventarios</h2>
+                <p>Aplicación para la gestión de inventarios, creado a la medida
+                    para cumplir las necesidades específicas de una mediana empresa.
+                <br>
+                </p>
+                <br>
+                <!--
+                <button class = "extend">Ver más</button>
+                -->
+            </div>
+            <!-- 
+                        <div>
+                <h3>Tecnologías usadas:</h3>
+                <ul>
+                    <li>Angular</li>
+                    <li>Express</li>
+                    <li>Docker</li>
+                </ul>
+            </div>
+            -->
+        </aside>
+
+        <aside class = "enigma">
+            <div class = "enigma_info">
+                <h2>Mini enigma</h2>
+                <p>Algoritmo para encriptar mensajes con una clave, basado en el funcionamiento de la máquina enigma
+                de la segunda guerra mundial. Creado con <strong>Python y FastAPI.</strong>
+            </p> <p>
+                Ingresas un mensaje en la entrada de texto, la contraseña se usa para
+                crear los nuevos diccionarios para encriptar y desencriptar el mensaje.
+                Los espacios y el largo de la contraseña tambien influyen en el resultado.
+            </p>
+            </div>
+
+            <div class = "inputs">
+                <div class = "input_element">
+                    <h3>Entrada</h3>
+                    <textarea class = "text_enigma" id = "entrada"  placeholder="Escribe tu mensaje aquí"></textarea>
+                </div>
+                <div class = "input_element">
+                    <h3>Clave</h3>
+                    <div class = "key">
+                        <textarea id = "clave_enigma" placeholder="Escribe la clave aquí"></textarea>
+                        <button class="enigma_button" id="encrypt-button">Encriptar</button>
+                        <button class="enigma_button" id="decrypt-button">Desencriptar</button>
+                        <button class="enigma_button" id="swap-button">Intercambiar</button>
+                    </div>
+                </div>
+                <div class="input_element">
+                    <h3>Salida</h3>
+                    <textarea class = "text_enigma" id = "salida" placeholder="Escribe tu mensaje aquí"></textarea>
+                </div>
+            </div>
+        </aside>
+
+    </section>
+
+    <section id = "sobremi">
+        <h1>Más sobre mí</h1>
+        <div class="aboutme">
+            <aside class = "my_info"> 
+                <div class = "geninfo">
+                    <img src="img/foto.jpg" alt="Aquí mi foto" loading="lazy">
+                    <div>
+                        <h4>Brayham Pavon Martell</h4>
+                        <p>Egresado del Instituto Tecnológico de Toluca (Foto con título en proceso)</p>
+                    </div>
+                </div>
+                <div class="fortalezas">
+                    <h5>Fortalezas</h5>
+                    <ul>
+                        <li>Resolución de problemas</li>
+                        <li>Trabajo con equipos multidisciplinarios</li>
+                        <li>Comodidad de trabajo con consola</li>
+                        <li>Interés en Linux</li>
+                        <li>Redacción de estándares de calidad</li>
+                    </ul>
+                </div>
+            </aside>
+
+            <aside class= "second_info">
+                <h4>Lenguajes</h4>
+                <ul>
+                    <li>Python</li>
+                    <li>HTML - CSS</li>
+                    <li>Java</li>
+                    <li>Java Script</li>
+                    <li>TypeScript</li>
+                </ul>
+            </aside>
+
+            <aside class= "second_info">
+                <h4>Frameworks y Librerías</h4>
+                <ul>
+                    <li>Angular</li>
+                    <li>React</li>
+                    <li>FastAPI</li>
+                    <li>Express</li>
+                    <li>Flet</li>
+                </ul>
+            </aside>
+
+            <aside class= "second_info">
+                <h4>Plataformas y Herramientas</h4>
+                <ul>
+                    <li>Git y Github</li>
+                    <li>Docker</li>
+                    <li>Figma</li>
+                    <li>Postman</li>
+                </ul>
+            </aside>
+
+            <aside class= "second_info">
+                <h4>Intereses</h4>
+                <ul>
+                    <li>Desrrollo de software</li>
+                    <li>Aplicaciones multiplataforma</li>
+                    <li>Sistemas Linux</li>
+                </ul>
+            </aside>
+
+        </div>
+    </section>
+    
+
+    <section id = "contacto">
+
+    <h2>Si quieres contactarme</h2>
+    
+    <footer class = "info_card">
+
+        <a href="https://www.linkedin.com/in/bpmartell"
+        target="_blank"><p><img src="img/icons/linkedin.png" alt="Icono linkedin" loading="lazy"> Linkedin: Brayham Pavon Martell</p></a>
+        <a href="https://github.com/brianpm141"
+        target="_blank"><p><img src="img/icons/github.png" alt="Icono github" loading="lazy"> Github: brianpm141</p></a>
+        <a href="mailto:bpavonmartell@hotmail.com"><p><img src="img/icons/mail.png" alt="Icono correo" loading="lazy"> Correo electrónico: bpavonmartell@hotmail.com</p></a>
+    </footer>
+    </section>
+
+
+    </main>
+
+    <script src="enigma.js"></script>
+    <script src="carousel.js"></script>
+</body>
+</html>
