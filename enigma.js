@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const claveEnigmaTextarea = document.getElementById('clave_enigma');
     const salidaTextarea = document.getElementById('salida');
 
-    const API_BASE_URL = 'http://127.0.0.1:8000/minienigma';
+    const API_BASE_URL = 'https://mini-enigma.vercel.app/';
 
     const callApi = async (endpoint, message, password) => {
         try {
