@@ -190,38 +190,47 @@ main{
   background:var(--gray-background);
   border-radius:10px;
   color:var(--primary-color);
-  display:flex;
-  flex-direction:row;
+  display:grid;
+  grid-template-columns: repeat(5,1fr);
   margin:3vh 0;
-  min-height:45vh;
+  min-height:40vh;
   outline:2px solid var(--gray-background);
   padding:5% ;
   text-align:left;
   justify-content: center;
   align-items: center;
   width:80%;
+  row-gap: 5vh;
 }
-.card h2,
-.info_element h2{ color:var(--secondary-color); }
+
+.img_element {
+  grid-column: 1/4;
+}
 
 .info_element{
+  grid-column: 4/6;
   display:flex;
   flex:3;
   flex-direction:column;
-  font-size:25px;
   justify-content:center;
   margin:0 5% 3%;
   padding:10px;
-  min-width: 35%;
+  width: 100%;
 }
-.info_element h2{ font-size:35px; margin:10% 0 5%; }
+
+.info_element h2{ 
+  font-size:30px; 
+  margin:10% 0 5%;
+  color: var(--secondary-color);
+}
+
 .info_element p{
   color:var(--primary-color);
-  font-size:25px;
+  font-size:20px;
   margin:0 0 3%;
   width:90%;
 }
-.info_element button{
+.info_element button, .ext_element #inventarios_btn{
   background:var(--button-color);
   border:0;
   border-radius:10px;
@@ -258,6 +267,57 @@ main{
     font-size:15px;
     font-weight:bold;
     padding:10px 25px;
+    min-width: 40%;
+}
+
+.ext_element {
+  grid-column: 1/6;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  row-gap: 3vh;
+  /* Animation styles */
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.8s ease-in-out, opacity 0.8s ease-in-out;
+}
+
+.ext_element.expanded {
+    max-height: fit-content; /* Adjust as needed */
+    opacity: 1;
+}
+
+.grid_container{
+  grid-column: 1/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.grid_container strong{
+  color:var(--secondary-color);
+  align-self: self-start;
+  margin-left: 5%;
+  font-size:25px;
+  margin-bottom: 0px;
+}
+
+.grid_container p {
+  width: 90%;
+}
+
+.img_detail{
+  grid-column: 1/3;
+  border-radius:15px;
+  overflow:hidden;
+  position:relative;
+  max-width: 70%;
+  object-fit: cover;
 }
 
 /* =========================
@@ -541,7 +601,8 @@ main{
   margin:auto;
   overflow:hidden;
   position:relative;
-  width:100%;
+  height: 40vh;
+  max-width: 100%;
 }
 .carousel-slide{
   align-items:center;
@@ -549,7 +610,6 @@ main{
   display:flex;
   height:100%;
   justify-content:center;
-  overflow:hidden;
 }
 .carousel-slide img{
   border-radius:15px;

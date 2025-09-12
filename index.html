@@ -35,7 +35,7 @@
     <main>
         <section id = "titulo">
         <h1>Hola, me llamo <strong> Brayham Pavon Martell </strong></h1>
-        <p>Soy un desarrollador de software que le gusta solucionar problemas reales implementando soluciones de software eficientes y escalables.</p>
+        <p>Soy un desarrollador de software al que le gusta solucionar problemas reales implementando soluciones de software eficientes y escalables.</p>
         <span>
             <a href="#proyectos" class = "navegation_button" >Mis proyectos</a>
             <a href="#contacto" class = "navegation_button"> Contáctame</a>
@@ -44,12 +44,11 @@
 
     <section id = "proyectos">
         <h1>Mis proyectos</h1>
-
-        <aside class = "card" id="inventarios">
+        <article class = "card" id="inventarios">
             <div class="img_element">
                 <div class="carousel-container">
                     <div class="carousel-slide">
-                        <img src="img/Inventarios/Asignacion.png" alt="Asignacion">
+                        <img src="img/Inventarios/Asignacion.png" alt="Asignación">
                         <img src="img/Inventarios/Captura Gestion equipos.png" alt="Captura Gestion equipos">
                         <img src="img/Inventarios/Categorias.png" alt="Categorias">
                         <img src="img/Inventarios/Reportes.png" alt="Reportes">
@@ -61,35 +60,17 @@
             </div>
             <div class = "info_element">
                 <h2>Aplicación web de manejo de inventarios</h2>
-                <p>Aplicación para la gestión de inventarios, creado a la medida
-                    para cumplir las necesidades específicas de una mediana empresa.
                 <br>
+                <p>Aplicación para la gestión de inventarios, creada a la medida
+                    para cumplir las necesidades específicas de una mediana empresa.
                 </p>
                 <br>
-                <!--
-                <button class = "extend">Ver más</button>
-                -->
+                <button class = "extend" id = "inventarios_btn" >Ver más</button>
             </div>
-            <!-- 
-                        <div>
-                <h3>Tecnologías usadas:</h3>
-                <ul>
-                    <li>Angular</li>
-                    <li>Express</li>
-                    <li>Docker</li>
-                </ul>
-            </div>
-            -->
-        </aside>
+        <div class= "ext_element" id = "ext_inventarios" ></div>
+        </article>
 
         <aside class = "card" id="inventarios">
-                <div class = "info_element">
-                <h2>Pigmeus Teams</h2>
-                <p>Aplicacion pequeña para el registro de actividades y pendientes de una organizacion, 
-                    divididos por departamentos.
-                    Hecho totalmente en python y usando sqlite para la gestion de base de datos.
-                </p>
-            </div>
             <div class="img_element">
                 <div class="carousel-container">      
                     <div class="carousel-slide">
@@ -102,20 +83,14 @@
                     
                 </div>
             </div>
-
-            <!-- 
-                        <div>
-                <h3>Tecnologías usadas:</h3>
-                <ul>
-                    <li>Angular</li>
-                    <li>Express</li>
-                    <li>Docker</li>
-                </ul>
+            <div class = "info_element">
+                <h2>Pigmeus Teams</h2>
+                <p>Aplicación pequeña para el registro de actividades y pendientes de una organización, 
+                    divididos por departamentos.
+                    Hecho totalmente en python y usando sqlite para la gestion de base de datos.
+                </p>
             </div>
-            -->
-            <!--
-                <button class = "extend">Ver más</button>
-            -->
+            
         </aside>
 
         <aside class = "enigma">
@@ -124,7 +99,7 @@
                 <p>Algoritmo para encriptar mensajes con una clave, basado en el funcionamiento de la máquina enigma
                 de la segunda guerra mundial. Creado con <strong>Python y FastAPI.</strong>
             </p> <p>
-                Ingresas un mensaje en la entrada de texto, la contraseña se usa para
+                Ingresa un mensaje en la entrada de texto; la contraseña se usa para
                 crear los nuevos diccionarios para encriptar y desencriptar el mensaje.
                 Los espacios y el largo de la contraseña tambien influyen en el resultado.
             </p>
@@ -162,7 +137,7 @@
                     <div>
                         <h4>Brayham Pavon Martell</h4>
                         <p> <strong>Ingeniero en Sistemas Computacionales.</strong> 
-                            <br>
+                            <br/>
                             Egresado del Instituto Tecnológico de Toluca (Foto con título en proceso)</p>
                     </div>
                 </div>
@@ -172,7 +147,7 @@
                         <li>Resolución de problemas</li>
                         <li>Trabajo con equipos multidisciplinarios</li>
                         <li>Comodidad de trabajo con consola de comandos</li>
-                        <li>Interés en Linux</li>
+                        <li>Interés por Linux</li>
                         <li>Redacción de estándares de calidad</li>
                     </ul>
                 </div>
@@ -234,7 +209,7 @@
 
         <a href="https://www.linkedin.com/in/bpmartell"
         target="_blank"><p><img src="img/icons/linkedin.png" alt="Icono linkedin" loading="lazy"> Linkedin: Brayham Pavon Martell</p></a>
-        <a href="https://github.com/brianpm141"
+        <a href="https://github.com/brianpm141" 
         target="_blank"><p><img src="img/icons/github.png" alt="Icono github" loading="lazy"> Github: brianpm141</p></a>
         <a href="mailto:bpavonmartell@hotmail.com"><p><img src="img/icons/mail.png" alt="Icono correo" loading="lazy"> Correo electrónico: bpavonmartell@hotmail.com</p></a>
     </footer>
@@ -245,5 +220,6 @@
 
     <script src="enigma.js"></script>
     <script src="carousel.js"></script>
+    <script src="detalles.js"></script>
 </body>
 </html>
