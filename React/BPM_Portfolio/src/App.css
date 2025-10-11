@@ -13,5 +13,7 @@ body {
   padding: 0;
   position: absolute;
   user-select: none;
-  width: 100%;
+  width: 100vw;
+  overflow-x: hidden;
+
 }

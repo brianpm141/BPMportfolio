@@ -1,18 +1,15 @@
 import "../styles/sobreMi.css"
+import "../styles/web.css"
 
 export default function SobreMi() {
     return (
         <section id="sobremi">
 
-            <h1>Más sobre mí</h1>
+            <h1 className="section-title">Más sobre mí</h1>
 
-            {/* CAMBIO: 'class' a 'className' */}
             <div className="aboutme">
-                {/* CAMBIO: 'class' a 'className' */}
                 <aside className="my_info"> 
-                    {/* CAMBIO: 'class' a 'className' */}
                     <div className="geninfo">
-                        {/* CAMBIO: La ruta de la imagen se usa desde la variable importada */}
                         <img src="" alt="Aquí mi foto" loading="lazy"/>
                         <div>
                             <h4>Brayham Pavon Martell</h4>
@@ -21,7 +18,6 @@ export default function SobreMi() {
                                 Egresado del Instituto Tecnológico de Toluca (Foto con título en proceso)</p>
                         </div>
                     </div>
-                    {/* CAMBIO: 'class' a 'className' */}
                     <div className="fortalezas">
                         <h5>Fortalezas</h5>
                         <ul>
@@ -34,7 +30,6 @@ export default function SobreMi() {
                     </div>
                 </aside>
 
-                {/* CAMBIO: 'class' a 'className' */}
                 <aside className="second_info">
                     <h4>Lenguajes</h4>
                     <ul>
@@ -46,7 +41,6 @@ export default function SobreMi() {
                     </ul>
                 </aside>
 
-                {/* CAMBIO: 'class' a 'className' */}
                 <aside className="second_info">
                     <h4>Frameworks y Librerías</h4>
                     <ul>
@@ -58,7 +52,6 @@ export default function SobreMi() {
                     </ul>
                 </aside>
 
-                {/* CAMBIO: 'class' a 'className' */}
                 <aside className="second_info">
                     <h4>Plataformas y Herramientas</h4>
                     <ul>
@@ -70,7 +63,6 @@ export default function SobreMi() {
                     </ul>
                 </aside>
 
-                {/* CAMBIO: 'class' a 'className' */}
                 <aside className="second_info">
                     <h4>Motivaciones</h4>
                     {/* CAMBIO: Estilo en línea corregido a objeto JS */}

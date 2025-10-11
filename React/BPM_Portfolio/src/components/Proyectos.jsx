@@ -1,10 +1,11 @@
 import "../styles/proyectos.css"
+import "../styles/web.css"
 
 export default function Proyectos(props) {
     return (
         <section id = "proyectos">
         
-        <h1>Mis proyectos</h1>
+        <h1 className="section-title">Mis proyectos</h1>
 
             <article className = "card" id="inventarios">
                 <div className="img_element">
