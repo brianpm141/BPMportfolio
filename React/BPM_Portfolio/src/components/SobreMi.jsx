@@ -1,5 +1,7 @@
 import "../styles/sobreMi.css"
 import "../styles/web.css"
+import foto from "../assets/foto.jpg"
+import brig from "../assets/brgandmax.jpg"
 
 export default function SobreMi() {
     return (
@@ -10,7 +12,7 @@ export default function SobreMi() {
             <div className="aboutme">
                 <aside className="my_info"> 
                     <div className="geninfo">
-                        <img src="" alt="Aquí mi foto" loading="lazy"/>
+                        <img src={foto} alt="Aquí mi foto" loading="lazy"/>
                         <div>
                             <h4>Brayham Pavon Martell</h4>
                             <p> <strong>Ingeniero en Sistemas Computacionales.</strong> 
@@ -65,10 +67,8 @@ export default function SobreMi() {
 
                 <aside className="second_info">
                     <h4>Motivaciones</h4>
-                    {/* CAMBIO: Estilo en línea corregido a objeto JS */}
                     <p style={{ marginTop: '0' }}>Ellos son brigitte y Maximo, los mejores compañeros del mundo.</p>
-                    {/* CAMBIO: La ruta de la imagen se usa desde la variable importada */}
-                    <img src="" alt="fotos de brig y max" loading="lazy" />
+                    <img src={brig} alt="fotos de brig y max" loading="lazy" />
                 </aside>
             </div>
         </section>

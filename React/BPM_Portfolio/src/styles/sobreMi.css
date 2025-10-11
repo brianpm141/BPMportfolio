@@ -3,12 +3,13 @@
 /* =========================
    About Me
 ========================= */
+/* sobreMi.css */
 #sobremi {
   align-items: center;
   color: var(--primary-color);
   display: flex;
   flex-direction: column;
-  margin-top: 5vh;
+  /* margin-top: 5vh; <-- Elimina esta línea */
   width: 100%;
 }
 
@@ -24,7 +25,7 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 1fr;
   padding: 5%;
-  width: 100%;
+  width: 90%;
 }
 
 .aboutme ul {
@@ -39,7 +40,7 @@
   color: var(--primary-color);
   display: inline-block;
   font-size: 12px;
-  margin-bottom: 4%;
+  margin: 2%;
   padding: 10px 16px;
   text-align: center;
 }
