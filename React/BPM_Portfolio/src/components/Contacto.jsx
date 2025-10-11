@@ -1,3 +1,5 @@
+import "../styles/contacto.css"
+
 export default function Contacto(){
     return(
         <section id = "contacto">

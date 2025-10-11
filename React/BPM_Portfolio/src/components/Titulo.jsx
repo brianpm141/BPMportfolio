@@ -1,3 +1,5 @@
+import "../styles/titulo.css"
+
 export default function Titulo() {
     return (
         <section id = "titulo">

@@ -1,3 +1,4 @@
+import "../styles/sobreMi.css"
 
 export default function SobreMi() {
     return (

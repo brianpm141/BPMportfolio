@@ -1,0 +1,148 @@
+@import url('colors.css');
+
+/* =========================
+   About Me
+========================= */
+#sobremi {
+  align-items: center;
+  color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vh;
+  width: 100%;
+}
+
+#sobremi h1 {
+  color: var(--secondary-color);
+  font-size: 35px;
+  margin: 10vh 0 0;
+}
+
+.aboutme {
+  display: grid;
+  gap: 5%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  padding: 5%;
+  width: 100%;
+}
+
+.aboutme ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.aboutme li {
+  background: var(--primary-background);
+  border-radius: 10px;
+  color: var(--primary-color);
+  display: inline-block;
+  font-size: 12px;
+  margin-bottom: 4%;
+  padding: 10px 16px;
+  text-align: center;
+}
+
+.geninfo {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.geninfo img {
+  aspect-ratio: 1/1;
+  border-radius: 15px;
+  max-height: 100px;
+}
+
+.geninfo h4 {
+  color: var(--primary-color);
+  font-size: 20px;
+  font-weight: bold;
+  margin: 5% 0 5% 5%;
+}
+
+.geninfo p {
+  color: var(--text-color);
+  font-size: 15px;
+  margin: 0 0 5% 5%;
+  width: 100%;
+}
+
+.my_info {
+  background: var(--third-background);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/3;
+  grid-row: 1/3;
+  padding: 5%;
+}
+
+.second_info {
+  background: var(--gray-background);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 5% 10% 5% 10%;
+  align-items: center;
+}
+
+.second_info img {
+  aspect-ratio: 1/1;
+  max-width: 70%;
+  border-radius: 15px;
+  justify-self: center;
+  align-self: center;
+  overflow: auto;
+  object-fit: contain;
+}
+
+.second_info h4 {
+  color: var(--primary-color);
+  font-size: 18px;
+  margin: 5% 0 10%;
+  text-align: center;
+}
+
+.second_info h5 {
+  color: var(--text-color);
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 3%;
+}
+
+.second_info ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.second_info li {
+  background: var(--skills-bg);
+  border: 1px solid var(--skills-border);
+  border-radius: 10px;
+  color: var(--skills-text);
+  display: inline-block;
+  font-size: 12px;
+  margin-bottom: 4%;
+  padding: 10px 16px;
+  text-align: center;
+}
+
+/* =========================
+   Responsive
+========================= */
+@media (max-width: 768px) {
+  .aboutme {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 5%;
+  }
+  .my_info {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}

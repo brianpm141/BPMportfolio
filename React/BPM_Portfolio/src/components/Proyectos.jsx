@@ -1,4 +1,6 @@
-export default function Proyectos() {
+import "../styles/proyectos.css"
+
+export default function Proyectos(props) {
     return (
         <section id = "proyectos">
         
@@ -8,21 +10,15 @@ export default function Proyectos() {
                 <div className="img_element">
                     <div className="carousel-container">
                         <div className="carousel-slide">
-                            <img src="img/Inventarios/Asignacion.png" alt="Asignación" />
-                            <img src="img/Inventarios/Captura Gestion equipos.png" alt="Captura Gestion equipos" />
-                            <img src="img/Inventarios/Categorias.png" alt="Categorias" />
-                            <img src="img/Inventarios/Reportes.png" alt="Reportes" />
-                            <img src="img/Inventarios/Ubicaciones.png" alt="Ubicaciones" />
+                            <img src={props.mainImg} alt="Main image" />
                         </div>
                         <a className="prev" onclick="plusSlides(-1)">&#10094;</a>
                         <a className="next" onclick="plusSlides(1)">&#10095;</a>
                     </div>
                 </div>
                 <div className = "info_element">
-                    <h2>Aplicación web de manejo de inventarios</h2>
-                    <p>Aplicación para la gestión de inventarios, creada a la medida
-                        para cumplir las necesidades específicas de una mediana empresa.
-                    </p>
+                    <h2>{props.title}</h2>
+                    <p>{props.description}</p>
                     <button className = "extend" id = "inventarios_btn" >Ver más</button>
                 </div>
             <div className= "ext_element" id = "ext_inventarios" ></div>
