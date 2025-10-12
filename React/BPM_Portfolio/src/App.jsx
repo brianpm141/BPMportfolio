@@ -8,13 +8,13 @@ import Contacto from './components/Contacto'
 function App() {
 
   return (
-    <body>
+    <>
       <Header/>
       <Titulo/>
       <Proyectos/>
       <SobreMi/>
       <Contacto/>
-    </body>
+    </>
   )
 }
 

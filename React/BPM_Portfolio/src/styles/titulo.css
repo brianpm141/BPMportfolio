@@ -70,5 +70,6 @@
 
 .navegation_button:hover {
   background: var(--hover-color);
+  color: var(--primary-background);
   scale: 1.1;
 }
