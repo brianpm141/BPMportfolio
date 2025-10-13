@@ -16,7 +16,7 @@
 }
 
 #titulo::before {
-  background: url('../assets/background.jpg') center/cover no-repeat;
+  background: url('/background.jpg') center/cover no-repeat;
   content: '';
   filter: blur(5px);
   height: 100%;

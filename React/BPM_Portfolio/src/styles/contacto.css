@@ -74,4 +74,12 @@
   padding: 5px 0 5px 20px;
   overflow: auto;
   margin: 1%;
+  transition-duration: 0.4s;
+}
+
+.tags:hover {
+  background-color: var(--blue-background);
+  color: white;
+  scale: 1.05;
+  
 }

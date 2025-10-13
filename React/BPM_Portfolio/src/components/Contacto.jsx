@@ -1,8 +1,8 @@
 import "../styles/contacto.css"
 import "../styles/web.css"
-import github from "../assets/icons/github.png"
-import linkedin from "../assets/icons/linkedin.png"
-import mail from "../assets/icons/mail.png"
+import github from "/icons/github.png"
+import linkedin from "/icons/linkedin.png"
+import mail from "/icons/mail.png"
 
 export default function Contacto(){
     return(

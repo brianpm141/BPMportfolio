@@ -1,32 +1,29 @@
 [
     {
         "id": 1,
-        "nombre" : "Aplicacion para control de Inventarios",
-        "descripcion" : "Aplicacion de escritorio para control de inventarios, generacion de reportes y creacion de formatos.",
-        "imagenes" : [
-            {
-                "url": "../../assets/inventarios/Asignacion.png"
-            } 
-        ]
+        "nombre": "Aplicacion para control de Inventarios",
+        "descripcion": "Aplicacion de escritorio para control de inventarios, generacion de reportes y creacion de formatos.",
+        "imagenes": {
+            "portada": "/inventarios/portadaInventario.png"
+        },
+        "lenguajes": ["Angular", "ExpressJS", "Docker"]
     },
     {
         "id": 2,
-        "nombre" : "Pigmeus Teams",
-        "descripcion" : "Aplicacion Python para el registro de actividades del personal",
-        "imagenes" : [
-            {
-                "url": "../../assets/Pigmeus/actividades.png"
-            } 
-        ]
+        "nombre": "Pigmeus Teams",
+        "descripcion": "Aplicacion Python para el registro de actividades del personal",
+        "imagenes": {
+            "portada": "/Pigmeus/portadaTeams.png"
+        },
+        "lenguajes": ["Python", "SQlite", "Flet"]
     },
     {
         "id": 3,
-        "nombre" : "Mini enigma",
-        "descripcion" : "Api hecha en python para la encriptacion de mensajes basandose en la maquina Enigma de la segunda guerra mundial.",
-        "imagenes" : [
-            {
-                "url": "../../assets/inventarios/Asignacion.png"
-            } 
-        ]
+        "nombre": "Mini enigma",
+        "descripcion": "Api hecha en python para la encriptacion de mensajes basandose en la maquina Enigma de la segunda guerra mundial.",
+        "imagenes": {
+            "portada": "/miniEnigma/portadaEnigma.png"
+        },
+        "lenguajes": ["Python", "FastAPI"]
     }
 ]

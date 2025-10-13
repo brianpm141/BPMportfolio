@@ -1,7 +1,7 @@
 import "../styles/sobreMi.css"
 import "../styles/web.css"
-import foto from "../assets/foto.jpg"
-import brig from "../assets/brgandmax.jpg"
+import foto from "/foto.jpg"
+import brig from "/brgandmax.jpg"
 
 export default function SobreMi() {
     return (
