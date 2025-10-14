@@ -1,29 +1,58 @@
 [
     {
         "id": 1,
-        "nombre": "Aplicacion para control de Inventarios",
-        "descripcion": "Aplicacion de escritorio para control de inventarios, generacion de reportes y creacion de formatos.",
+        "nombre": "Aplicación para control de Inventarios",
+        "descripcion": "Aplicación de escritorio para control de inventarios, generación de reportes y creación de formatos.",
         "imagenes": {
-            "portada": "/inventarios/portadaInventario.png"
+            "portada": "/inventarios/portadaInventario.png",
+            "carrucel": ["/inventarios/Asignacion.png",
+                        "/inventarios/equipos.png",
+                        "/inventarios/Categorias.png",
+                        "/inventarios/Reportes.png",
+                        "/inventarios/Ubicaciones.png"]
         },
-        "lenguajes": ["Angular", "ExpressJS", "Docker"]
+        "tecnologias": ["Angular", "ExpressJS", "Mysql", "Docker"],
+        "caracteristicas": [
+            "CRUDS para la gestión de equipos, áreas, departamentos y productos de la organización.",
+            "Generación de reportes en PDF, Excel y CSV con distintos filtros.",
+            "Registro de movimientos de los usuarios y opciones de recuperación de información.",
+            "Generación de formatos de responsabilidad de equipos, bajas y mantenimientos junto con su registro histórico.",
+            "Capacidad para exportar e importar información de la base de datos y la generación automática de respaldos.",
+            "Sistema de autenticación y autorización con distintos roles de usuario y registro de los movimientos por usuario."
+        ]
     },
     {
         "id": 2,
-        "nombre": "Pigmeus Teams",
-        "descripcion": "Aplicacion Python para el registro de actividades del personal",
+        "nombre": "Pigmeus Teams", "descripcion": "Aplicación Python para el registro de actividades del personal",
         "imagenes": {
-            "portada": "/Pigmeus/portadaTeams.png"
+            "portada": "/Pigmeus/portadaTeams.png",
+            "carrucel": [
+                "/Pigmeus/actividades.png",
+                "/Pigmeus/pendientes.png",
+                "/Pigmeus/usuariosDepartamentos.png"
+            ]
         },
-        "lenguajes": ["Python", "SQlite", "Flet"]
+        "tecnologias": ["Python", "SQlite", "Flet"],
+        "caracteristicas": [
+            "Registro de actividades diarias del personal con tiempos de inicio y fin.",
+            "Creacion de categorias para organizar las actividades.",
+            "Filtros para visualizar por colaborador o categoria.",
+            "Registro de proyectos y medicion de avances asi como registro de estados."
+        ]
     },
     {
         "id": 3,
         "nombre": "Mini enigma",
-        "descripcion": "Api hecha en python para la encriptacion de mensajes basandose en la maquina Enigma de la segunda guerra mundial.",
+        "descripcion": "API hecha en Python para la encriptación de mensajes basándose en la máquina Enigma de la Segunda Guerra Mundial.",
         "imagenes": {
-            "portada": "/miniEnigma/portadaEnigma.png"
+            "portada": "/miniEnigma/portadaEnigma.png",
+            "carrucel": ["/miniEnigma/portadaEnigma.png"]
         },
-        "lenguajes": ["Python", "FastAPI"]
+        "tecnologias": ["Python", "FastAPI"],
+        "caracteristicas": [
+            "Encriptación y desencriptación de mensajes utilizando una lógica similar a la máquina Enigma.",
+            "Api restfull para la integración."
+        ]
+    
     }
 ]

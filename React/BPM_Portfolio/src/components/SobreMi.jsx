@@ -38,7 +38,7 @@ export default function SobreMi() {
                         <li>Python</li>
                         <li>HTML - CSS</li>
                         <li>Java</li>
-                        <li>Java Script</li>
+                        <li>JavaScript</li>
                         <li>TypeScript</li>
                     </ul>
                 </aside>
@@ -67,7 +67,7 @@ export default function SobreMi() {
 
                 <aside className="second_info">
                     <h4>Motivaciones</h4>
-                    <p style={{ marginTop: '0' }}>Ellos son brigitte y Maximo, los mejores compañeros del mundo.</p>
+                    <p style={{ marginTop: '0' }}>Ellos son Brigitte y Máximo, los mejores compañeros del mundo.</p>
                     <img src={brig} alt="fotos de brig y max" loading="lazy" />
                 </aside>
             </div>
