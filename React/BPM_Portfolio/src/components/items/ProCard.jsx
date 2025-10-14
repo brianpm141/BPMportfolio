@@ -8,8 +8,16 @@ export default function ProCard(props) {
     const [mostrarDetalles, setMostrarDetalles] = useState(false);
     const summaryRef = useRef(null);
     const detailRef = useRef(null);
+    const isInitialMount = useRef(true);
+
 
     useEffect(() => {
+
+        if (isInitialMount.current) {
+                    isInitialMount.current = false;
+                    return;
+                }
+
         const targetRef = mostrarDetalles ? detailRef : summaryRef;
         
         const timer = setTimeout(() => {
