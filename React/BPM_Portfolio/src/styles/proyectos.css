@@ -1,0 +1,150 @@
+@import url('colors.css');
+
+#proyectos {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vh;
+  width: 100%;
+}
+
+.contenedor_cards{
+    display: grid;
+    gap: 5%;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    width: 90%;
+}
+
+.card {
+    box-sizing: border-box;
+    margin-top: 5vh;
+    background-color: var(--third-background);
+    border-radius: 15px;
+    padding: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition-duration: 0.3s;
+
+}
+
+.card:hover{
+    scale: 1.02;
+}
+
+.card img {
+    border-radius: 10px;
+    object-fit: cover;
+    width: 100%;
+    aspect-ratio: 16/12;
+}
+
+.detalles {
+    background-color: var(--secondary-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    color: var(--primary-background);
+    transition-duration: 0.4s;
+    margin-top: auto;
+    margin-bottom: 5%;
+    width: 70%;
+    text-align: center;
+}
+
+.detalles:hover{
+    background-color: var(--hover-color);
+    scale: 1.1;
+    color: white;
+}
+
+.cardDet{
+    box-sizing: border-box;
+    margin-top: 5vh;
+    background-color: var(--third-background);
+    border-radius: 15px;
+    padding: 2%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 1 / -1;
+}
+
+.introduccion{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    gap: 5%;
+    margin-bottom: 5%;
+}
+
+.carrucel-container{
+    flex: 3;
+    border-radius: 15px;
+}
+
+.carrucel-container .slide img {
+    border-radius: 15px;
+}
+
+.tecnologiasArea{
+    flex: 2;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}   
+
+.introduccion h4{
+    color: var(--hover-color);
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.tecnologias {
+    display: flex;
+    gap: 15px; 
+    list-style-type: none; 
+    padding: 5px; 
+    width: 100%;
+    justify-content: center
+}
+
+.tecnologias li {
+    background-color: var(--blue-background);
+    padding:10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.ajuste{
+    margin-top: 10%;
+    font-weight: bold;
+    font-size: 24px;
+    width: 80%;
+}
+
+.tituloDetalle {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.caracteristicas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+.caracteristica {
+    font-size: 20px;
+    border: 2px solid var(--secondary-background);
+    border-radius: 10px;
+    margin-bottom: 3vh;
+    width: 70%;
+    padding: 2% 3%;
+}

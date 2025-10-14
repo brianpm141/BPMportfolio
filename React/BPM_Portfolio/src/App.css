@@ -1,0 +1,19 @@
+@import url('./styles/colors.css');
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  background: var(--primary-background);
+  font-family: 'Inter', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  user-select: none;
+  width: 100vw;
+  overflow-x: hidden;
+
+}
