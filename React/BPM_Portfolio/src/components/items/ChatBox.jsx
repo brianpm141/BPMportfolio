@@ -79,8 +79,7 @@ export default function ChatBoxNoTailwind() {
       // Si la API devuelve un campo `result` usamos eso; si no, mostramos JSON crudo/texto
       let finalString;
       if (parsed && typeof parsed.result !== "undefined") {
-        const nicePrefix = endpoint.replace("/", "").toUpperCase();
-        finalString = `${nicePrefix}: ${parsed.result}`;
+        finalString = rawResult;
       } else if (parsed) {
         finalString = `RESPUESTA: ${JSON.stringify(parsed)}`;
       } else {
