@@ -45,60 +45,65 @@ export default function ChatBoxNoTailwind() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [input, password, isLoading, apiResult]);
 
-  const callApi = async (endpoint, message, currentPassword) => {
-    if (!mountedRef.current) return;
-    setIsLoading(true);
-    setStatusMsg("Cargando...");
-    setApiResult(null);
+const callApi = async (endpoint, message, currentPassword) => {
+  if (!mountedRef.current) return;
+  setIsLoading(true);
+  setStatusMsg("Cargando...");
+  setApiResult(null);
 
-    try {
-      const response = await fetch(`${API_BASE_URL}${endpoint}`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message, password: currentPassword }),
-      });
+  try {
+    const response = await fetch(`${API_BASE_URL}${endpoint}`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ message, password: currentPassword }),
+    });
 
-      // lee texto por si la API no responde JSON válido
-      const text = await response.text();
-      let parsed;
-      try {
-        parsed = JSON.parse(text);
-      } catch (e) {
-        parsed = null;
-      }
+    const text = await response.text();
+    let parsed = null;
+    try { parsed = JSON.parse(text); } catch (e) { parsed = null; }
 
-      console.log("API raw response:", { status: response.status, text, parsed });
+    console.log("API raw response:", { status: response.status, text, parsed });
 
-      if (!response.ok) {
-        // intenta extraer detalle si existe
-        let detail = `Error HTTP! Status: ${response.status}`;
-        if (parsed && parsed.detail) detail = parsed.detail;
-        throw new Error(detail);
-      }
-
-      // Si la API devuelve un campo `result` usamos eso; si no, mostramos JSON crudo/texto
-      let finalString;
-      if (parsed && typeof parsed.result !== "undefined") {
-        finalString = rawResult;
-      } else if (parsed) {
-        finalString = `RESPUESTA: ${JSON.stringify(parsed)}`;
-      } else {
-        finalString = `RESPUESTA: ${text}`;
-      }
-
-      if (mountedRef.current) {
-        setApiResult(finalString);
-        setStatusMsg(""); // limpiamos status porque ahora mostramos resultado
-      }
-    } catch (err) {
-      if (mountedRef.current) {
-        setApiResult(null);
-        setStatusMsg(`Error al procesar: ${err.message}`);
-      }
-    } finally {
-      if (mountedRef.current) setIsLoading(false);
+    if (!response.ok) {
+      let detail = `Error HTTP! Status: ${response.status}`;
+      if (parsed && parsed.detail) detail = parsed.detail;
+      throw new Error(detail);
     }
-  };
+
+    // --- Normalizar el resultado
+    let rawResult;
+    if (parsed && typeof parsed.result !== "undefined") {
+      rawResult = parsed.result;
+    } else if (parsed !== null && typeof parsed === "string") {
+      rawResult = parsed;
+    } else if (parsed !== null) {
+      rawResult = JSON.stringify(parsed);
+    } else {
+      rawResult = text;
+    }
+
+    // Limpiar comillas si las hay
+    if (typeof rawResult === "string") {
+      const match = rawResult.match(/^"(.*)"$/s);
+      if (match) rawResult = match[1];
+    }
+
+    // ✅ Mostrar solo el resultado limpio, sin prefijo
+    const finalString = rawResult;
+
+    if (mountedRef.current) {
+      setApiResult(finalString);
+      setStatusMsg("");
+    }
+  } catch (err) {
+    if (mountedRef.current) {
+      setApiResult(null);
+      setStatusMsg(`Error al procesar: ${err.message}`);
+    }
+  } finally {
+    if (mountedRef.current) setIsLoading(false);
+  }
+};
 
   const handleAction = () => {
     const trimmed = input.trim();
