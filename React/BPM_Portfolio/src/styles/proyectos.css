@@ -6,6 +6,7 @@
   flex-direction: column;
   margin-top: 5vh;
   width: 100%;
+  color: var(--primary-color);
 }
 
 .contenedor_cards{
@@ -13,12 +14,15 @@
     gap: 5%;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     width: 90%;
+    color: var(--primary-color);
+
 }
 
 .card {
     box-sizing: border-box;
     margin-top: 5vh;
     background-color: var(--third-background);
+    color: var(--primary-color);
     border-radius: 15px;
     padding: 5%;
     width: 100%;
@@ -51,6 +55,7 @@
     margin-bottom: 5%;
     width: 70%;
     text-align: center;
+    color: var(--primary-color);
 }
 
 .detalles:hover{
@@ -70,6 +75,8 @@
     flex-direction: column;
     align-items: center;
     grid-column: 1 / -1;
+    color: var(--primary-color);
+
 }
 
 .introduccion{
@@ -78,6 +85,7 @@
     width: 80%;
     gap: 5%;
     margin-bottom: 5%;
+    color: var(--primary-color);
 }
 
 .carrucel-container{
