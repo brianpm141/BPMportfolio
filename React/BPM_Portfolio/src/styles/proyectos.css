@@ -166,6 +166,7 @@
   gap: 10px;
   width: 100%;
   font-family: "Work Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: var(--primary-color);
 }
 
 /* Fila principal que contiene las dos columnas (input / output) */
@@ -205,7 +206,8 @@
   line-height: 1.4;
   box-shadow: none;              /* nada de sombras */
   outline: none;                 /* nada de outline al foco */
-  transition: none;              /* sin transición de color */
+  transition: none;    
+  color: var(--primary-color);          /* sin transición de color */
 }
 
 /* Input read-only (output) ligeramente distinto visualmente */

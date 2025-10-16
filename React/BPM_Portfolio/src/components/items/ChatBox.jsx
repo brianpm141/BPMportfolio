@@ -103,7 +103,6 @@ export default function ChatBoxNoTailwind() {
         setPassword('');
     }
     setOutput(""); // Limpiar la salida
-    // La validación se ejecutará inmediatamente después gracias al useEffect
   };
   
 
@@ -152,7 +151,6 @@ export default function ChatBoxNoTailwind() {
           <span>Desencriptar</span>
         </div>
 
-        {/* Deshabilitar si no es válido o si está cargando */}
         <button className="cb-action" onClick={handleAction} disabled={!isValid || isLoading}>
           {isLoading ? 'Procesando...' : 'Encriptar'}
         </button>
