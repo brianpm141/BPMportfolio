@@ -50,8 +50,7 @@
         },
         "tecnologias": ["Python", "FastAPI"],
         "caracteristicas": [
-            "Encriptación y desencriptación de mensajes utilizando una lógica similar a la máquina Enigma.",
-            "Api restfull para la integración."
+            "Colocas un texto junto con una contraseña que servira para codificar el mensaje, despues solo seleccionas si deseas encriptar o desencriptar y ejecutas la accion"
         ]
     
     }
