@@ -1,7 +1,7 @@
 @import url('colors.css');
 
 /* =========================
-   Contact
+    Contact
 ========================= */
 #contacto {
   align-items: center;
@@ -70,7 +70,7 @@
   background-color: var(--third-background);
   border-radius: 10px;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   padding: 5px 0 5px 20px;
   overflow: auto;
   margin: 1%;
@@ -82,4 +82,27 @@
   color: white;
   scale: 1.05;
   
+}
+
+@media (max-width: 768px) {
+  .contacto_intro {
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .tags {
+    width: 80%;
+    min-width: 80%;
+    height: 80px;
+    padding: 5px;
+  }
+
+  .info_card p {
+    font-size: 16px;
+    gap: 5%;
+  }
+
+  .info_card img {
+    max-height: 40px;
+  }
 }

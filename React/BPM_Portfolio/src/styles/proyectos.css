@@ -148,3 +148,59 @@
     width: 70%;
     padding: 2% 3%;
 }
+
+@media (max-width: 768px) {
+    .contenedor_cards {
+      grid-template-columns: 1fr;
+      width: 95%;
+      gap: 3%;
+    }
+  
+    .introduccion {
+      flex-direction: column;
+      width: 95%;
+      align-items: center;
+    }
+  
+    .carrucel-container {
+      width: 100%;
+    }
+  
+    .tecnologiasArea {
+      font-size: 20px;
+      margin-top: 20px;
+      width: 100%;
+    }
+  
+    .introduccion h4 {
+      font-size: 28px;
+      text-align: center;
+    }
+  
+    .tecnologias {
+      flex-wrap: wrap;
+    }
+  
+    .tecnologias li {
+      font-size: 16px;
+      padding: 8px 15px;
+    }
+  
+    .ajuste {
+      font-size: 20px;
+      width: 95%;
+    }
+  
+    .tituloDetalle {
+      font-size: 28px;
+    }
+  
+    .caracteristica {
+      font-size: 16px;
+      width: 90%;
+    }
+  
+    .cardDet {
+      padding: 4%;
+    }
+  }

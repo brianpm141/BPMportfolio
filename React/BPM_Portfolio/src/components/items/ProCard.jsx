@@ -24,7 +24,7 @@ export default function ProCard(props) {
             if (targetRef.current) {
                 targetRef.current.scrollIntoView({
                     behavior: "smooth",
-                    block: "center" // Usamos 'center' para que la imagen quede más centrada en la pantalla
+                    block: "center"
                 });
             }
         }, 900);

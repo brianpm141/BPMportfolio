@@ -1,5 +1,9 @@
 @import url('./styles/colors.css');
 
+* {
+    box-sizing: border-box;
+}
+
 html{
   scroll-behavior: smooth;
 }
@@ -7,13 +11,25 @@ html{
 body {
   -ms-user-select: none;
   -webkit-user-select: none;
+  user-select: none;
   background: var(--primary-background);
   font-family: 'Inter', Arial, sans-serif;
   margin: 0;
   padding: 0;
-  position: absolute;
-  user-select: none;
+  position: relative;;
   width: 100vw;
   overflow-x: hidden;
+}
 
+@media (min-width: 600px) {
+    /* Ajustes generales para Tabletas */
+    body {
+        /* Aumentar el tamaño base de la fuente para mejor legibilidad */
+        font-size: 1.05rem; 
+        
+        /* Opcional: Centrar el contenido en pantallas medianas si no tienes un contenedor principal */
+        /* max-width: 900px;
+        margin: 0 auto; */
+    }
+    
 }

@@ -64,7 +64,7 @@
   display: block;
   text-align: center;
   border: var(--primary-background) solid 2px;
-  max-width: 20vw;
+  width: 15vw;
   transition-duration: 0.5s;
 }
 
@@ -72,4 +72,34 @@
   background: var(--hover-color);
   color: var(--primary-background);
   scale: 1.1;
+}
+
+/* =========================
+      Media Queries
+========================= */
+@media (max-width: 768px) {
+  #titulo {
+    padding: 0 5%;
+  }
+
+  #titulo h1 {
+    font-size: 35px;
+    width: 100%;
+    margin-top: 25vh;
+  }
+
+  #titulo p {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  #titulo span {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navegation_button {
+    width: 60vw;
+    margin: 2% 0;
+  }
 }
