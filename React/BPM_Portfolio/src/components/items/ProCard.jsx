@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+import ChatBox  from "./ChatBox";
 
 
 export default function ProCard(props) {
@@ -109,6 +110,9 @@ export default function ProCard(props) {
                             {item}
                         </div>
                     ))}
+                </div>
+                <div style={{width : "60%"}}>
+                    {props.nombre === "Mini enigma" && <ChatBox />}
                 </div>
             </motion.div>
         )

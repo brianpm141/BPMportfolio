@@ -6,6 +6,7 @@
   flex-direction: column;
   margin-top: 5vh;
   width: 100%;
+  color: var(--primary-color);
 }
 
 .contenedor_cards{
@@ -13,12 +14,15 @@
     gap: 5%;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     width: 90%;
+    color: var(--primary-color);
+
 }
 
 .card {
     box-sizing: border-box;
     margin-top: 5vh;
     background-color: var(--third-background);
+    color: var(--primary-color);
     border-radius: 15px;
     padding: 5%;
     width: 100%;
@@ -45,12 +49,12 @@
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 10px;
-    color: var(--primary-background);
     transition-duration: 0.4s;
     margin-top: auto;
     margin-bottom: 5%;
     width: 70%;
     text-align: center;
+    color: var(--primary-color);
 }
 
 .detalles:hover{
@@ -70,6 +74,8 @@
     flex-direction: column;
     align-items: center;
     grid-column: 1 / -1;
+    color: var(--primary-color);
+
 }
 
 .introduccion{
@@ -78,6 +84,7 @@
     width: 80%;
     gap: 5%;
     margin-bottom: 5%;
+    color: var(--primary-color);
 }
 
 .carrucel-container{
@@ -147,6 +154,204 @@
     margin-bottom: 3vh;
     width: 70%;
     padding: 2% 3%;
+}
+
+
+/* chatbox.css — bordes y switch siempre azules, sin cambios en foco */
+
+/* Contenedor principal */
+.cb-root {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  font-family: "Work Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: var(--primary-color);
+}
+
+/* Fila principal que contiene las dos columnas (input / output) */
+.cb-row {
+  display: flex;
+  gap: 10%;
+  width: 100%;
+}
+
+/* Cada columna (Input / Output) */
+.cb-col {
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Etiquetas */
+.cb-col > label {
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+/* Textareas comunes para input y output
+   - bordes AZULES siempre
+   - sin cambios en :focus
+*/
+.cb-col textarea {
+  width: 100%;
+  min-height: 220px;
+  resize: none;
+  padding: 16px;
+  border-radius: 12px;
+  border: 2px solid #1773cf;     /* borde azul constante */
+  background: transparent;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  box-shadow: none;              /* nada de sombras */
+  outline: none;                 /* nada de outline al foco */
+  transition: none;    
+  color: var(--primary-color);          /* sin transición de color */
+}
+
+/* Input read-only (output) ligeramente distinto visualmente */
+.cb-col textarea[readonly] {
+  background-clip: padding-box;
+  opacity: 0.98;
+}
+
+/* Controles inferiores: password, toggle, botón */
+.cb-controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+/* Password: ocupa el espacio restante */
+.cb-pass {
+  flex: 1 1 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 180px;
+}
+
+.cb-pass label {
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+/* Input password: borde AZUL constante, sin foco especial */
+.cb-pass input[type="password"] {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 2px solid #1773cf;     /* borde azul constante */
+  background: transparent;
+  font-size: 0.95rem;
+  outline: none;
+  box-shadow: none;
+  transition: none;
+}
+
+/* Toggle (Encode / Decode) */
+.cb-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 8px; /* alinea con inputs */
+  flex: 0 0 auto;
+}
+
+/* Texto alrededor del switch */
+.cb-toggle span {
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+/* Switch: estructura accesible */
+.cb-switch {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 24px;
+  margin: 0 6px;
+}
+
+.cb-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Fondo del switch
+   - azul constante (no cambia)
+   - la perilla se mueve para indicar el estado
+*/
+.cb-slider {
+  position: absolute;
+  inset: 0;
+  background: #1773cf;           /* azul constante */
+  border-radius: 999px;
+  transition: none;              /* sin transición de color */
+}
+
+/* Knob del switch */
+.cb-slider::after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 1px 2px rgba(11,17,20,0.08);
+  transition: transform 0.18s ease; /* mov. suave de la perilla */
+}
+
+/* Movimiento de la perilla cuando está checked */
+.cb-switch input:checked + .cb-slider::after {
+  transform: translateX(20px);
+}
+
+/* Botón de acción */
+.cb-action {
+  padding: 10px 16px;
+  border-radius: 10px;
+  background-color: #1773cf; /* azul primario */
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  flex: 0 0 auto;
+  transition: filter 0.12s ease, box-shadow 0.12s ease;
+}
+
+.cb-action:hover {
+  filter: brightness(0.95);
+}
+
+.cb-action:active {
+  transform: translateY(1px);
+}
+
+/* Responsividad: en pantallas pequeñas apila las columnas */
+@media (max-width: 880px) {
+  .cb-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .cb-col textarea {
+    min-height: 160px;
+  }
+
+  .cb-controls {
+    gap: 10px;
+  }
+
+  .cb-pass {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
