@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 
 html {
-    background-color: #162e21;
+    background-color: #f2fcf7;
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
@@ -15,12 +15,15 @@ body {
 }
 
 @theme {
-      --color-bg-green: #162e21;  
-      --color-bs-green: #102218;
-      --color-pr-green: #13ec6d;
-      --color-sd-green: #0a8b40;
-      --color-tr-green: #0a8b40;
-      --color-tx-green:#effef4;
-      --color-bl-green:#013217;
+      --color-primary-background: #f2fcf7;  
+      --color-dark-background: #022c22;
+      --color-surface-background : #ffffff;
+      --color-primary-green: #00d664;
+      --color-secondary-green: #00b553;
+      --color-border-ligth: #cbf0dd;
+      --color-border-green: #86efac;
+      --color-text-main: #063d2b;
+      --color-text-body: #3f6e5d;
+      --color-text-dark: #ecfdf5;
 }
 

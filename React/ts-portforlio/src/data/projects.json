@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "nombre": "Aplicación para control de Inventarios",
+        "descripcion": "Aplicación de escritorio para control de inventarios, generación de reportes y creación de formatos.",
+        "imagenes": {
+            "portada": "https://github.com/brianpm141/BPMportfolio/blob/main/React/BPM_Portfolio/public/inventarios/portadaInventario.png",
+            "carrucel": [
+                "/inventarios/Asignacion.png",
+                "/inventarios/equipos.png",
+                "/inventarios/Categorias.png",
+                "/inventarios/Reportes.png",
+                "/inventarios/Ubicaciones.png"
+            ]
+        },
+        "tecnologias": [
+            "Angular",
+            "ExpressJS",
+            "Mysql",
+            "Docker"
+        ],
+        "caracteristicas": [
+            "CRUDS para la gestión de equipos, áreas, departamentos y productos de la organización.",
+            "Generación de reportes en PDF, Excel y CSV con distintos filtros.",
+            "Registro de movimientos de los usuarios y opciones de recuperación de información.",
+            "Generación de formatos de responsabilidad de equipos, bajas y mantenimientos junto con su registro histórico.",
+            "Capacidad para exportar e importar información de la base de datos y la generación automática de respaldos.",
+            "Sistema de autenticación y autorización con distintos roles de usuario y registro de los movimientos por usuario."
+        ],
+        "repositorio": ""
+    },
+    {
+        "id": 2,
+        "nombre": "Pigmeus Teams",
+        "descripcion": "Aplicación de escritorio para el registro de actividades del personal.",
+        "imagenes": {
+            "portada": "React/BPM_Portfolio/public/PigmeusTeams/pt_logo.png",
+            "carrucel": [
+                "/PigmeusTeams/pt_actividades.png",
+                "/PigmeusTeams/pt_login.png",
+                "/PigmeusTeams/pt_usuarios.png"
+            ]
+        },
+        "tecnologias": [
+            "Python",
+            "PostgreSQL",
+            "Flet"
+        ],
+        "caracteristicas": [
+            "Registro de actividades del personal por departamentos y colaboradores.",
+            "Control de departamentos y colaboradores por usuarios",
+            "Usuarios con distintos niveles de permisos.",
+            "Registro indicidual y colaborativo de actividades.",
+            "Diferentes tipos de registro; Actividades, Pendientes y Proyectos.",
+            "Acceso general de departamentos o por usuarios"
+        ],
+        "repositorio":"https://github.com/brianpm141/Pigmeus.git"
+    },
+    {
+        "id": 3,
+        "nombre": "Pigmeus Teams",
+        "descripcion": "Aplicación de escritorio para el registro de actividades del personal.",
+        "imagenes": {
+            "portada": "React/BPM_Portfolio/public/PigmeusTeams/pt_logo.png",
+            "carrucel": [
+                "/PigmeusTeams/pt_actividades.png",
+                "/PigmeusTeams/pt_login.png",
+                "/PigmeusTeams/pt_usuarios.png"
+            ]
+        },
+        "tecnologias": [
+            "Python",
+            "PostgreSQL",
+            "Flet"
+        ],
+        "caracteristicas": [
+            "Registro de actividades del personal por departamentos y colaboradores.",
+            "Control de departamentos y colaboradores por usuarios",
+            "Usuarios con distintos niveles de permisos.",
+            "Registro indicidual y colaborativo de actividades.",
+            "Diferentes tipos de registro; Actividades, Pendientes y Proyectos.",
+            "Acceso general de departamentos o por usuarios"
+        ],
+        "repositorio":"https://github.com/brianpm141/Pigmeus.git"
+    }
+]

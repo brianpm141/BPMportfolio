@@ -8,22 +8,23 @@ export default function Intro(){
     return (
     <section className="
     flex items-center justify-center
-    w-screen h-lvh">
-        {/** Background con capa negro enfrente */}
+    w-screen h-lvh" id = "home">
+        {/** Background con capa negro enfrente 
         <div
         className="absolute inset-0 
         bg-cover bg-center bg-no-repeat blur-md z-0"
         style={{ backgroundImage: `url(${background})` }}/>
         <div className="absolute inset-0 bg-black/20"/>
-        
-        {/** Contenido de la vista */}
+
+        /** Contenido de la vista */}
 
         <div className="flex flex-row relative z-40 gap-25 p-30
-        text-amber-50 text-2xl
-        items-center">
+       text-2xl items-center">
             <div
             className="flex flex-col gap-5">
-                <h1 className="text-4xl" >Hola, soy <strong className="text-4xl text-pr-green">Brayham Pavon Martell</strong></h1>
+                <h1 className="text-6xl w-2/3" >Hola, me llamo <br/>
+                <strong className="text-6xl bg-linear-to-r 
+                from-primary-green to-text-main text-transparent bg-clip-text">Brayham Pavon Martell</strong></h1>
                 <p className="">Soy un ingeniero en sistemas computacionales con enfoque 
                     la calidad del usuario y software de calidad sostenible en el
                     tiempo 
