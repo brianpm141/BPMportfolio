@@ -71,7 +71,7 @@ export default function Profile() {
             </div>
             <div className="flex flex-col p-10 gap-5">
                 <h3 className="text-3xl">Habilidades técnicas</h3>
-                <div className="grid grid-cols-2 gap-15">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-15">
                     <div className="bg-primary-background rounded-2xl
                     p-5 border border-border-light
                     transition-all duration-700 ease-in-out
@@ -79,7 +79,7 @@ export default function Profile() {
                         <h4 className="text-xl text-center flex gap-2">
                             <img src="https://www.svgrepo.com/show/280695/programmer.svg" alt="" className="w-5" />
                             Lenguajes y frameworks</h4>
-                        <div className="flex justify-evenly p-3">
+                        <div className="flex flex-col sm:flex-row justify-evenly p-3">
                             <ul className="">
                                 <li>HTML-CSS</li>
                                 <li>Tailwind</li>
