@@ -10,24 +10,42 @@ html {
 }
 
 body {
-    font-family: 'Rubik','Itim', sans-serif ;
+    font-family: 'Rubik', 'Itim', sans-serif;
     color: #FFFFFF;
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE 10+/Edge */
-    user-select: none; /* Standard */
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE 10+/Edge */
+    user-select: none;
+    /* Standard */
 }
 
 @theme {
-      --color-primary-background: #f2fcf7;  
-      --color-dark-background: #022c22;
-      --color-surface-background : #ffffff;
-      --color-primary-green: #00d664;
-      --color-secondary-green: #3b8f67;
-      --color-border-ligth: #cbf0dd;
-      --color-border-green: #86efac;
-      --color-text-main: #063d2b;
-      --color-text-body: #3f6e5d;
-      --color-text-dark: #ecfdf5;
+    --color-primary-background: #f2fcf7;
+    --color-dark-background: #022c22;
+    --color-surface-background: #ffffff;
+    --color-primary-green: #00d664;
+    --color-secondary-green: #3b8f67;
+    --color-border-ligth: #cbf0dd;
+    --color-border-green: #86efac;
+    --color-text-main: #063d2b;
+    --color-text-body: #3f6e5d;
+    --color-text-dark: #ecfdf5;
+    /*ANIMATIONS*/
 }
 
+/*DARK MODE*/
+[data-theme='dark'] {
+    --color-primary-background: #0f172a;
+    --color-dark-background: #0f172a;
+    --color-surface-background: #1e293b;
+    --color-primary-green: #3b82f6;
+    --color-secondary-green: #2563eb;
+    --color-border-ligth: #1e293b;
+    --color-border-green: #475569;
+    --color-text-main: #f1f5f9;
+    --color-text-body: #94a3b8;
+    --color-text-dark: #ffffff;
+}

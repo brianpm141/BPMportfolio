@@ -53,10 +53,10 @@ export default function Intro() {
                 </div>
                 {/** ----- Foto Mia desktop ------- */}
                 <img src={portrait} alt="Portrait Desktop"
-                    className="hidden md:block h-auto w-full max-w-xs md:max-w-none md:h-120 
+                    className="hidden md:block h-auto md:w-auto md:h-120 
             rounded-full md:rounded-none md:mask-radial-at-center 
-            md:mask-radial-from-55%
-            md:mask-radial-to-70% object-cover aspect-square md:aspect-auto" />
+            md:mask-radial-from-60%
+            md:mask-radial-to-70% object-cover object-top" />
             </div>
 
 
