@@ -13,12 +13,12 @@ export default function Profile() {
     return (
         <section id="Profile"
             className="w-screen min-h-lvh
-        grid grid-cols-2 
-        bg-surface-background gap-10 p-15">
+        grid grid-cols-1 lg:grid-cols-2 
+        bg-surface-background gap-10 p-5 lg:p-15">
             <div className="flex flex-col p-10 gap-5">
                 <small className="bg-primary-background p-2
                 rounded-2xl border border-secondary-green
-                w-1/5 text-center">
+                w-1/2 lg:w-1/5 text-center">
                     Perfil profesional</small>
                 <h2 className="text-5xl">Más sobre mí</h2>
                 <p className="text-2xl text-text-body">
@@ -124,10 +124,10 @@ export default function Profile() {
                             hab="Pasión por aprender" />
                     </ul>
                 </div>
-                <div className="flex justify-between bg-secondary-green
+                <div className="flex flex-col lg:flex-row justify-between bg-secondary-green
                 px-10 py-5 rounded-4xl mt-10 items-center border
                 transition-all duration-700 ease-in-out
-                hover:scale-103">
+                hover:scale-103 gap-5">
                     <p className="text-xl text-text-dark">¿Interesado en mi perfil?
                         <br /> <small className="text-sm">Descarga aquí mi CV para ver más detalles</small>
                     </p>

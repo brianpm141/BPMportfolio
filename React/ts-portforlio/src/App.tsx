@@ -10,16 +10,16 @@ function App() {
   return (
     <main className='
     bg-primary-background
-    h-screen
+    min-h-screen
     w-full
     flex-1
     text-text-main
     '>
-      <Header/>
-      <Intro/>
-      <ProjectTemplate/>
-      <Profile/>
-      <Contact/>
+      <Header />
+      <Intro />
+      <ProjectTemplate />
+      <Profile />
+      <Contact />
     </main>
   )
 }
