@@ -6,10 +6,6 @@ export default function Profile() {
 
     const CV_URL: string = "https://mini-enigma.vercel.app/minienigma/cv";
 
-    function downloadCV() {
-        window.open(CV_URL, "_blank");
-    }
-
     return (
         <section id="Profile"
             className="w-screen min-h-lvh
@@ -131,11 +127,11 @@ export default function Profile() {
                     <p className="text-xl text-text-dark">¿Interesado en mi perfil?
                         <br /> <small className="text-sm">Descarga aquí mi CV para ver más detalles</small>
                     </p>
-                    <a className="bg-primary-background
+                    <a href={CV_URL} className="bg-primary-background
                     px-10 py-3 rounded-2xl border-2 border-border-primary-green
                     transition-all duration-300 ease-in-out
                     hover:scale-110
-                    " onClick={downloadCV}>
+                    ">
                         Descargar</a>
                 </div>
             </div>
