@@ -22,7 +22,7 @@ export default function Header() {
         flex flex-wrap md:flex-nowrap items-center justify-between
         font-medium
         ">
-            <div className="flex gap-2 items-center" >
+            <div className="flex gap-2 items-center w-full justify-center md:w-auto md:justify-start" >
                 <a href="#home" className="flex items-center">
                     <img src={logo} alt="Logo" className="h-17" />
                     <span><strong className="text-primary-green text-2xl">BPM</strong> Portafolio de Software</span>
