@@ -28,7 +28,7 @@ export default function Header() {
                     <span><strong className="text-primary-green text-2xl">BPM</strong> Portafolio de Software</span>
                 </a>
             </div>
-            <div className="flex gap-5 items-center">
+            <div className="flex gap-5 items-center w-full justify-between md:w-auto md:justify-end">
                 <ul className="flex gap-5 overflow-x-auto md:overflow-visible w-full md:w-auto mt-2 md:mt-0 justify-center md:justify-end">
 
                     <li>
