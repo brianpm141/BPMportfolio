@@ -6,8 +6,8 @@ export default function Header(){
     return(
         <header className="bg-surface-background/70
         backdrop-blur-sm
-        border-b-3 border-border-ligth/80
-        fixed top-0 w-screen h-17 p-3 z-50
+        border-b-2 border-border-ligth
+        fixed top-0 w-screen h-17 px-10 py-3 z-50
         flex items-center justify-between
         font-medium
         ">
@@ -18,15 +18,16 @@ export default function Header(){
             </a>
             </div>
             <ul className="flex gap-5">
-                <li> <NavElement 
-                text="Proyectos" 
-                link = "#projects"/> </li>
-                <li> <NavElement 
-                text="Perfil"
-                link = "#Profile"/> </li>
-                <li> <NavElement 
-                text="Contacto"
-                link="#Contacto"/> </li>
+                
+                <li>
+                    <NavElement href="#projects">Proyectos</NavElement>
+                </li>
+                <li>
+                    <NavElement href="#Profile">Perfil</NavElement>    
+                </li>
+                <li>
+                    <NavElement href="#Contacto">Contacto</NavElement>
+                </li>
             </ul>
         </header>
     )

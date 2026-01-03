@@ -1,18 +1,22 @@
-export default function ButonNav(props:any){
-    console.log(props.link)
+interface Props extends React.AnchorHTMLAttributes<HTMLAnchorElement> {}
+
+export default function ButonNav({children,...props}:Props){
+
     return(
-        <a href={props.link} target="_blank"
+        <a
         className="bg-secondary-green
         py-3 px-8
         flex justify-center text-center
-        rounded-3xl mt-5
+        rounded-2xl mt-5
         text-text-dark
 
         transition-all duration-300 ease-in-out
         hover:scale-110
         hover:bg-primary-green
-        ">
-            {props.text}
+        "
+        {...props}
+        >
+            {children}
         </a>
     )
 }

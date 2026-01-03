@@ -8,8 +8,12 @@ export default function ProjectTemplate(){
 
     return (
         <section className="flex flex-col p-15 
-        w-screen gap-8
-        " id = 'projects'>
+        w-screen gap-8 bg-primary-background
+        border-b-2 border-border-ligth" 
+        id = 'projects'>
+
+            <div className="border border-border-ligth "/>
+
             <h2 className="text-3xl font-semibold mt-10"> Mis proyectos Destacados</h2>
 
             <div className="grid grid-cols-3 gap-10">

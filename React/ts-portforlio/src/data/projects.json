@@ -55,32 +55,5 @@
             "Acceso general de departamentos o por usuarios"
         ],
         "repositorio":"https://github.com/brianpm141/Pigmeus.git"
-    },
-    {
-        "id": 3,
-        "nombre": "Pigmeus Teams",
-        "descripcion": "Aplicación de escritorio para el registro de actividades del personal.",
-        "imagenes": {
-            "portada": "React/BPM_Portfolio/public/PigmeusTeams/pt_logo.png",
-            "carrucel": [
-                "/PigmeusTeams/pt_actividades.png",
-                "/PigmeusTeams/pt_login.png",
-                "/PigmeusTeams/pt_usuarios.png"
-            ]
-        },
-        "tecnologias": [
-            "Python",
-            "PostgreSQL",
-            "Flet"
-        ],
-        "caracteristicas": [
-            "Registro de actividades del personal por departamentos y colaboradores.",
-            "Control de departamentos y colaboradores por usuarios",
-            "Usuarios con distintos niveles de permisos.",
-            "Registro indicidual y colaborativo de actividades.",
-            "Diferentes tipos de registro; Actividades, Pendientes y Proyectos.",
-            "Acceso general de departamentos o por usuarios"
-        ],
-        "repositorio":"https://github.com/brianpm141/Pigmeus.git"
     }
 ]

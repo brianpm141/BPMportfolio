@@ -10,7 +10,7 @@ export default function ProjectCard(props:any){
         rounded-4xl p-8 gap-5 h-auto
 
         " >
-            <div className="flex items-center">
+            <div className="flex items-center h-1/3 w-max">
                 <img src={props.img} alt="Portada" 
                 className="rounded-2xl h-max border-2 border-border-ligth/34" />
             </div>
@@ -18,7 +18,7 @@ export default function ProjectCard(props:any){
                 <h3 className="text-3xl font-semibold">
                 {props.title}</h3>
                 <p className="text-text-body">{props.description}</p>
-                
+                 
                 {/** 
                 <div className="flex gap-2 flex-col">
                     <p className="font-light mb-2">Tecnologias Utilizadas</p>
@@ -32,9 +32,7 @@ export default function ProjectCard(props:any){
                 </ul>
                 </div>
                 */}
-                <ButonNav
-                text="Ver repositorio"
-                link ={props.repository}/>
+                <ButonNav href={props.repository} target="_blank" >Ver Repositorio</ButonNav>
             </div>
         </article>
     )
