@@ -1,24 +1,29 @@
 import ButonNav from "../Buttons/ButtonNav"
 
-export default function ProjectCard(props:any){
+export default function ProjectCard(props: any) {
 
-    const tecnologies:string[] = props.tecnologies 
 
-    return(
+
+    return (
         <article className="bg-surface-background
-        flex flex-col justify-between
+        flex flex-col justify-evenly
         rounded-4xl p-8 gap-5 h-auto
-
+        transition-all duration-300 ease-in-out
+        hover:scale-101
         " >
-            <div className="flex items-center h-1/3 w-max">
-                <img src={props.img} alt="Portada" 
-                className="rounded-2xl h-max border-2 border-border-ligth/34" />
+            <div className="flex items-center h-1/3 w-full overflow-hidden
+            rounded-2xl relative">
+                <img
+                    src={props.img}
+                    alt="Portada"
+                    className="w-full h-full object-cover"
+                />
             </div>
             <div className="flex flex-col p-5 gap-3">
                 <h3 className="text-3xl font-semibold">
-                {props.title}</h3>
+                    {props.title}</h3>
                 <p className="text-text-body">{props.description}</p>
-                 
+
                 {/** 
                 <div className="flex gap-2 flex-col">
                     <p className="font-light mb-2">Tecnologias Utilizadas</p>

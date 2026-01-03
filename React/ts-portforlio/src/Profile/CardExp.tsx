@@ -1,10 +1,16 @@
-export default function CardExp(props:any){
+interface Props {
+    year:string
+    funciones:string
+    lugar:string
+}
+
+export default function CardExp(props:Props){
     return(
         <li className="mt-5 text-text-body ml-5">
             <p className="flex flex-col gap-1 text-xl">
                 <small className="text-secondary-green">{props.year}</small>
-                <strong className="text-text-main">{props.lugar}</strong>
-                {props.funciones}
+                <strong className="text-text-main">{props.funciones}</strong>
+                    {props.lugar}
                 {/** 
                  * 
                 <details className="m-5 group

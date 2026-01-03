@@ -11,7 +11,7 @@ export default function ButonNav({children,...props}:Props){
         text-text-dark
 
         transition-all duration-300 ease-in-out
-        hover:scale-110
+        hover:scale-105
         hover:bg-primary-green
         "
         {...props}
