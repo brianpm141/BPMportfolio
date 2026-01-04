@@ -43,7 +43,7 @@ export default function Intro() {
                     </div>
 
                     <p className="text-lg md:text-2xl mt-5 md:mt-0">Soy un Ingeniero en Sistemas con pasión por crear
-                        productos y herramientas de calidad, sostenible en el timpo y
+                        productos y herramientas de calidad, sostenible en el tiempo y
                         con impacto en las personas.
                     </p>
                     <aside className="flex gap-7">

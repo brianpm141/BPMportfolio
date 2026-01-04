@@ -63,9 +63,9 @@
         "nombre": "Mi página web",
         "descripcion": "Aquí puedes ver el código de mi portafolio, La versión actual es React, tailwind",
         "imagenes": {
-            "portada": "/",
+            "portada": "/portafolio/portada_portafolio.png",
             "carrucel": [
-                "/"
+                "/portafolio/portada_portafolio"
             ]
         },
         "tecnologias": [
