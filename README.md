@@ -31,7 +31,7 @@ Aquí puedes ver algunas capturas del portafolio:
 
 | ![Portafolio 1](React/ts-portforlio/public/portafolio/portafolio_1.png) | ![Portafolio 2](React/ts-portforlio/public/portafolio/portafolio_2.png) |
 |:---:|:---:|
-| *Vista General* | *Detalles de Proyectos* |
+| *Vista General* | *Tema Oscuro* |
 
 ### Versión Móvil
 <img src="React/ts-portforlio/public/portafolio/portafolio_movil.jpeg" width="300" alt="Vista Móvil">
