@@ -29,10 +29,6 @@ El portafolio incluye las siguientes secciones principales:
 
 Aquí puedes ver algunas capturas del portafolio:
 
-### Vista Principal
-![Portada del Portafolio](React/ts-portforlio/public/portafolio/portada_portafolio.png)
-
-### Secciones del Portafolio
 | ![Portafolio 1](React/ts-portforlio/public/portafolio/portafolio_1.png) | ![Portafolio 2](React/ts-portforlio/public/portafolio/portafolio_2.png) |
 |:---:|:---:|
 | *Vista General* | *Detalles de Proyectos* |
