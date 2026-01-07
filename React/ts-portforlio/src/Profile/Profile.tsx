@@ -127,7 +127,8 @@ export default function Profile() {
                     <p className="text-xl text-text-dark">¿Interesado en mi perfil?
                         <br /> <small className="text-sm">Descarga aquí mi CV para ver más detalles</small>
                     </p>
-                    <a href={CV_URL} target="_blank" rel="noopener noreferrer" className="bg-primary-background
+                    <a href={CV_URL} target="_blank" rel="noopener noreferrer" download="BrayhamPavonMartell_CV.pdf"
+                    className="bg-primary-background
                     px-10 py-3 rounded-2xl border-2 border-border-primary-green
                     transition-all duration-300 ease-in-out
                     hover:scale-110
