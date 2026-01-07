@@ -17,12 +17,12 @@ export default function Contact() {
                 <div className="text-2xl w-full md:w-auto
                     transition-all duration-300 ease-in-out
                     hover:scale-105">
-                    <h5 className="text-primary-green">¡Aquí tienes mi correo!</h5>
+                    <p className="text-primary-green">¡Aquí tienes mi correo!</p>
                     <a href="mailto:bpavonmartell@hotmail.com" >bpavonmartell@hotmail.com</a>
                 </div>
             </div>
 
-            <div className="w-full border border-text-main self-center" />
+            <div className="w-full border border-text-main self-center my-5" />
 
             <div className="flex flex-col md:flex-row gap-5 md:gap-10 justify-center md:justify-end items-center px-5 md:px-15">
                 <h5>Te dejo mis redes aquí</h5>
@@ -30,10 +30,10 @@ export default function Contact() {
                     <li><a href="https://www.linkedin.com/in/bpmartell/"
                         target="_blank" className="flex
                     transition-all duration-300 ease-in-out
-                    hover:scale-115">
+                    hover:scale-115" >
                         <img className="h-10"
                             src="https://www.svgrepo.com/show/157006/linkedin.svg"
-                            alt="Linkedin" />
+                            alt="Linkedin" loading="lazy" />
                     </a>
                     </li>
                     <li>
@@ -42,7 +42,7 @@ export default function Contact() {
                     transition-all duration-300 ease-in-out
                     hover:scale-130">
                             <img className="h-10"
-                                src="https://www.svgrepo.com/show/475654/github-color.svg" alt="Github" /></a>
+                                src="https://www.svgrepo.com/show/475654/github-color.svg" alt="Github" loading="lazy" /></a>
                     </li>
                 </ul>
 

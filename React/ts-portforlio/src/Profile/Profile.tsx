@@ -30,7 +30,7 @@ export default function Profile() {
                 hover:scale-103">
                     <h3 className="text-3xl flex items-center gap-3">
                         <img className="h-9"
-                            src="https://www.svgrepo.com/show/428085/study-university.svg" alt="" />
+                            src="/icons/educacion.svg" alt="" loading="lazy"/>
                         Educación</h3>
                     <ul>
                         <CardEd
@@ -49,7 +49,7 @@ export default function Profile() {
                 hover:scale-103">
                     <h3 className="text-3xl flex items-center gap-3">
                         <img className="h-9"
-                            src="https://www.svgrepo.com/show/486919/work-case.svg" alt="" />
+                            src="/icons/expe.svg" alt="" loading="lazy" />
                         Experiencia Profesional</h3>
                     <ul>
                         <CardExp
@@ -73,7 +73,7 @@ export default function Profile() {
                     transition-all duration-700 ease-in-out
                     hover:scale-103">
                         <h4 className="text-xl text-center flex gap-2">
-                            <img src="https://www.svgrepo.com/show/280695/programmer.svg" alt="" className="w-5" />
+                            <img src="/icons/lenguajes.svg" alt="" className="w-5" loading="lazy" />
                             Lenguajes y frameworks</h4>
                         <div className="flex flex-col sm:flex-row justify-evenly p-3">
                             <ul className="">
@@ -96,7 +96,7 @@ export default function Profile() {
                     transition-all duration-700 ease-in-out
                     hover:scale-103">
                         <h4 className="text-xl flex gap-2">
-                            <img src="https://www.svgrepo.com/show/497412/programming-arrows.svg" alt="" className="w-5" />
+                            <img src="/icons/git.svg" alt="" className="w-5" loading="lazy" />
                             Herramientas y Entornos</h4>
                         <ul className="p-3">
                             <li>Git-Github</li>

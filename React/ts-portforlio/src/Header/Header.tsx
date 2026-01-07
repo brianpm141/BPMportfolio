@@ -1,5 +1,4 @@
 import NavElement from "./NavElement"
-import logo from "../assets/logo.png"
 import { useEffect, useState } from "react"
 
 export default function Header() {
@@ -24,7 +23,8 @@ export default function Header() {
         ">
             <div className="flex gap-2 items-center w-full justify-center md:w-auto md:justify-start" >
                 <a href="#home" className="flex items-center">
-                    <img src={logo} alt="Logo" className="h-17" />
+                    <img src="/logo.png" alt="Logo" className="h-17"
+                    fetchPriority="high" loading="eager" />
                     <span><strong className="text-primary-green text-2xl">BPM</strong> Portafolio de Software</span>
                 </a>
             </div>

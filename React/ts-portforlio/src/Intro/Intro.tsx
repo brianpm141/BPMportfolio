@@ -1,22 +1,11 @@
 
 import ButonNav from "../Buttons/ButtonNav"
 
-import portrait from "../assets/portrait.jpg"
-
-
 export default function Intro() {
     return (
         <section className="
     flex items-center justify-center
     w-full min-h-screen overflow-x-hidden" id="home">
-            {/** Background con capa negro enfrente 
-        <div
-        className="absolute inset-0 
-        bg-cover bg-center bg-no-repeat blur-md z-0"
-        style={{ backgroundImage: `url(${background})` }}/>
-        <div className="absolute inset-0 bg-black/20"/>
-
-        /** Contenido de la vista */}
 
             <div className="flex flex-col md:flex-row relative z-40 gap-10 md:gap-25 py-10 md:py-30 px-5 md:px-40
        text-2xl items-center w-full">
@@ -38,8 +27,9 @@ export default function Intro() {
                         </div>
 
                         {/* Mobile Image */}
-                        <img src={portrait} alt="Portrait Mobile"
-                            className="w-2/5 md:hidden rounded-full aspect-square object-cover ml-2" />
+                        <img src="/portrait.webp" alt=""
+                            className="w-2/5 md:hidden rounded-full aspect-square object-cover ml-2"
+                            fetchPriority="high" loading="eager" />
                     </div>
 
                     <p className="text-lg md:text-2xl mt-5 md:mt-0">Soy un Ingeniero en Sistemas con pasión por crear
@@ -52,11 +42,11 @@ export default function Intro() {
                     </aside>
                 </div>
                 {/** ----- Foto Mia desktop ------- */}
-                <img src={portrait} alt="Portrait Desktop"
+                <img src="/portrait.webp" alt=""
                     className="hidden md:block h-auto md:w-auto md:h-120 
             rounded-full md:rounded-none md:mask-radial-at-center 
             md:mask-radial-from-60%
-            md:mask-radial-to-70% object-cover object-top" />
+            md:mask-radial-to-70% object-cover object-top" fetchPriority="high" loading="eager"/>
             </div>
 
 

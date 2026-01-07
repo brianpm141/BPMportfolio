@@ -17,6 +17,7 @@ export default function ProjectCard(props: any) {
                     src={props.img}
                     alt="Portada"
                     className="w-full h-full object-cover"
+                    loading="lazy"
                 />
             </div>
             <div className="flex flex-col p-5 gap-3">
