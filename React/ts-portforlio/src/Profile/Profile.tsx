@@ -4,7 +4,7 @@ import CardExp from "./CardExp"
 
 export default function Profile() {
 
-    const CV_URL: string = "https://mini-enigma.vercel.app/static/CV_BrayhamPavonMartell.pdf";
+    const CV_URL: string = "https://mini-enigma.vercel.app/static/CV_BrayhamPavonMartell.pdf?v=2";
 
     return (
         <section id="Profile"
