@@ -9,7 +9,7 @@ export default function ProjectTemplate() {
 
     return (
         <section className="flex flex-col p-15 
-        w-screen gap-8 bg-primary-background
+        w-full gap-8 bg-primary-background
         border-b-2 border-border-ligth"
             id='projects'>
 
@@ -27,7 +27,7 @@ export default function ProjectTemplate() {
                     repository={proyecto.repositorio}
                 />))}
 
-            <EnigmaCard/>
+                <EnigmaCard />
 
             </div>
 
