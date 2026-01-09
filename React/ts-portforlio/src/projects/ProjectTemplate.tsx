@@ -1,6 +1,7 @@
 import ProjectCard from "./ProjectCard"
 import projectsData from "../data/projects.json"
 import type { Proyecto } from "../data/types"
+import EnigmaCard from "./EnigmaCard"
 
 
 export default function ProjectTemplate() {
@@ -24,8 +25,9 @@ export default function ProjectTemplate() {
                     description={proyecto.descripcion}
                     tecnologies={proyecto.tecnologias}
                     repository={proyecto.repositorio}
-                />
-                ))}
+                />))}
+
+            <EnigmaCard/>
 
             </div>
 
