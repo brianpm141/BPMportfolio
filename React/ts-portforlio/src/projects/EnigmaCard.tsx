@@ -7,6 +7,7 @@ export default function EnigmaCard() {
     const [mensajeFin, setMensajeFin] = useState("")
     const [errorMes, setErrorMes] = useState("")
     const [pass, setPass] = useState("")
+    const [cargando, setCargando] = useState(false)
 
     const crypt = async () => {
         if (mensaje.length === 0) {
@@ -24,6 +25,7 @@ export default function EnigmaCard() {
         }
 
         try {
+            setCargando(true)
             const response = await fetch('https://mini-enigma.vercel.app/minienigma/encrypt',
                 {
                     method: 'POST',
@@ -42,6 +44,7 @@ export default function EnigmaCard() {
             setErrorMes("Algo salio mal, intenta de nuevo...")
         } finally {
             setErrorMes("")
+            setCargando(false)
         }
     }
 
@@ -61,6 +64,9 @@ export default function EnigmaCard() {
         }
 
         try {
+
+            setCargando(true)
+
             const response = await fetch('https://mini-enigma.vercel.app/minienigma/decrypt',
                 {
                     method: 'post',
@@ -83,6 +89,7 @@ export default function EnigmaCard() {
         }
         finally {
             setErrorMes("")
+            setCargando(false)
         }
     }
 
@@ -121,11 +128,12 @@ export default function EnigmaCard() {
                         maxLength={180}
                         placeholder="Aqui va tu mensaje a encriptar...."
                     ></textarea>
-                    <a onClick={crypt} className="bg-secondary-green w-full text-center py-3 mt-4 self-center
+                    <button onClick={crypt} className="bg-secondary-green w-full text-center py-3 mt-4 self-center
                     rounded-2xl text-text-dark
                     transition-all duration-300 ease-in-out
                     hover:scale-103 min-h-12"
-                    >Encriptar Mensaje</a>
+                    disabled = {cargando}
+                    >{ cargando ? "Cargando..." : "Encriptar" }</button>
                 </div>
                 <div className="flex flex-col">
                     <h4 className="text-2xl">Seguridad</h4>
@@ -151,10 +159,12 @@ export default function EnigmaCard() {
                         value={mensajeEnc}
                         placeholder="Aqui estara el mensaje encriptado, si lo modificas el mensaje sera diferente..."
                         onChange={(e) => setMensajeEnc(e.target.value)}></textarea>
-                    <a onClick={decrypt} className="bg-secondary-green w-full text-center py-3 mt-4 self-center
+                    <button onClick={decrypt} className="bg-secondary-green w-full text-center py-3 mt-4 self-center
                     rounded-2xl text-text-dark justify-center
                     transition-all duration-300 ease-in-out
-                    hover:scale-103 h-12">Desencriptar Mensaje</a>
+                    hover:scale-103 h-12"
+                    disabled = {cargando}>
+                    {cargando ? "Cargando...": "Desencriptar"}</button>
                 </div>
                 <div className="flex flex-col md:col-span-2 lg:col-span-1">
                     <h4 className="text-2xl mb-5" >Traduccion</h4>
