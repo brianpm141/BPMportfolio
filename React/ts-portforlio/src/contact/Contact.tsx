@@ -25,7 +25,7 @@ export default function Contact() {
             <div className="w-full border border-text-main self-center my-5" />
 
             <div className="flex flex-col md:flex-row gap-5 md:gap-10 justify-center md:justify-end items-center px-5 md:px-15">
-                <h5>Te dejo mis redes aquí</h5>
+                <h3>Te dejo mis redes aquí:</h3>
                 <ul className="flex flex-row gap-5">
                     <li><a href="https://www.linkedin.com/in/bpmartell/"
                         target="_blank" className="flex

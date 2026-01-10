@@ -4,7 +4,7 @@
         "nombre": "Aplicación para control de Inventarios",
         "descripcion": "Aplicación de escritorio para control de inventarios, generación de reportes y creación de formatos.",
         "imagenes": {
-            "portada": "/inventarios/portadaInventario.png",
+            "portada": "/inventarios/portadaInventario.webp",
             "carrucel": [
                 "/inventarios/portadaInventario.png",
                 "/inventarios/Asignacion.png",
@@ -63,7 +63,7 @@
         "nombre": "Mi página web",
         "descripcion": "Aquí puedes ver el código de mi portafolio, La versión actual es React, tailwind",
         "imagenes": {
-            "portada": "/portafolio/portada_portafolio.png",
+            "portada": "/portafolio/portada_portafolio.webp",
             "carrucel": [
                 "/portafolio/portada_portafolio"
             ]
