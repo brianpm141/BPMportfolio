@@ -17,8 +17,8 @@ function App() {
     '>
       <Header />
       <Intro />
-      <ProjectTemplate />
       <Profile />
+      <ProjectTemplate />
       <Contact />
     </main>
   )

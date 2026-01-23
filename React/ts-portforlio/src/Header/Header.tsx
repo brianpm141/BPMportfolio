@@ -30,12 +30,11 @@ export default function Header() {
             </div>
             <div className="flex gap-5 items-center w-full justify-between md:w-auto md:justify-end">
                 <ul className="flex gap-5 overflow-x-auto md:overflow-visible w-full md:w-auto mt-2 md:mt-0 justify-center md:justify-end">
-
-                    <li>
-                        <NavElement href="#projects">Proyectos</NavElement>
-                    </li>
                     <li>
                         <NavElement href="#Profile">Perfil</NavElement>
+                    </li>
+                    <li>
+                        <NavElement href="#projects">Proyectos</NavElement>
                     </li>
                     <li>
                         <NavElement href="#Contacto">Contacto</NavElement>
