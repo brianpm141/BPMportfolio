@@ -28,7 +28,7 @@
             "Capacidad para exportar e importar información de la base de datos y la generación automática de respaldos.",
             "Sistema de autenticación y autorización con distintos roles de usuario y registro de los movimientos por usuario."
         ],
-        "repositorio": "https://github.com/brianpm141/AplicacioInventarios.git"
+        "repositorio": "https://github.com/brianpm141/AppInventarios.git"
     },
     {
         "id": 2,
