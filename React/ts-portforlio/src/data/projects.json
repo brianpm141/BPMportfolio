@@ -60,22 +60,22 @@
     },
     {
         "id": 3,
-        "nombre": "Mi página web",
-        "descripcion": "Aquí puedes ver el código de mi portafolio, La versión actual es React, tailwind",
+        "nombre": "Aplicacion Mobil React",
+        "descripcion": "Es una aplicacion mobil para la gestion de citas clinicas con registro de pacientes, control de citas periodicas y seguimiento de historial medico.",
         "imagenes": {
-            "portada": "/portafolio/portada_portafolio.webp",
+            "portada": "/PigmeusTherapist/Pigmeus-portada.webp",
             "carrucel": [
-                "/portafolio/portada_portafolio"
+                "/PigmeusTherapist/Pigmeus-portada.webp"
             ]
         },
         "tecnologias": [
-            "React",
-            "Tailwind",
-            "TypeScript"
+            "React Native",
+            "Firebase",
+            "Expo"
         ],
         "caracteristicas": [
             "None"
         ],
-        "repositorio": "https://github.com/brianpm141/BPMportfolio.git"
+        "repositorio": "https://github.com/brianpm141/pigmeus_therapist.git"
     }
 ]
