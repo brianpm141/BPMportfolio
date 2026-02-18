@@ -89,7 +89,9 @@
             ]
         },
         "tecnologias": [
-            "React"
+            "React",
+            "Vercel",
+            "Vite"
         ],
         "caracteristicas": [
             "None"
