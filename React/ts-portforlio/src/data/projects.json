@@ -77,5 +77,23 @@
             "None"
         ],
         "repositorio": "https://github.com/brianpm141/pigmeus_therapist.git"
+    },
+    {
+        "id": 4,
+        "nombre": "Consumo de api con React",
+        "descripcion": "Pequeño dashboard para consumo de API y muestra en dashboard de criptomonedas.",
+        "imagenes": {
+            "portada": "/reactEj/reactDefault.webp",
+            "carrucel": [
+                "/reactEj/reactDefault.webp"
+            ]
+        },
+        "tecnologias": [
+            "React"
+        ],
+        "caracteristicas": [
+            "None"
+        ],
+        "repositorio": "https://react-ejercicio.vercel.app/"
     }
 ]
