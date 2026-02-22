@@ -97,5 +97,26 @@
             "None"
         ],
         "repositorio": "https://react-ejercicio.vercel.app/"
+    },
+    {
+        "id" : 5,
+        "nombre": "Retro Media Widget",
+        "descripcion": "Widget de reproduccion multimedia con estetica retro basada en windows 98.",
+        "imagenes" : {
+            "portada": "/retroMedia/retroMedia.webp",
+            "carrucel": [
+                "/retroMedia/retroMedia.webp",
+                "/retroMedia/retroMediaLogo.webp"
+            ]
+        },
+        "tecnologias": [
+            "TypeScript",
+            "Rust",
+            "Tauri"
+        ],
+        "caracteristicas" : [
+            "none"
+        ],
+        "repositorio": "https://github.com/brianpm141/Retrro-Media-Player.git"
     }
 ]
